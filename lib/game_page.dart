@@ -20,9 +20,10 @@ class _GamePageState extends State<GamePage> {
       appBar: AppBar(
         title: Center(
             child: Text(
-              '計數器',
+              'Counter',
               style: TextStyle(
                 fontSize: 50.0,
+                fontFamily: 'TrainOne',
               ),
             )),
       ),
@@ -49,8 +50,8 @@ class _GamePageState extends State<GamePage> {
                       fontSize: 20.0,
                     ),
                   ),
-                  style: ButtonStyle(
-                    // elevation: ,
+                  style: ElevatedButton.styleFrom(
+                    elevation: 5.0,
                   ),
                   onPressed: increment,
                 ),
